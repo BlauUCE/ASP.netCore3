@@ -155,3 +155,4 @@ C:\Users\desarrollo\Documents\Prueba\Prueba\obj\Debug\netcoreapp3.1\Prueba.cspro
 C:\Users\desarrollo\Documents\Prueba\Prueba\obj\Debug\netcoreapp3.1\Prueba.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\desarrollo\Documents\Prueba\Prueba\obj\Debug\netcoreapp3.1\Prueba.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\desarrollo\Documents\Prueba\Prueba\obj\Debug\netcoreapp3.1\Razor\Views\Usuarios\Index.cshtml.g.cs
+C:\Users\desarrollo\Documents\Prueba\Prueba\obj\Debug\netcoreapp3.1\Razor\Views\Usuarios\Metodo.cshtml.g.cs
