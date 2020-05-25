@@ -6,9 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Prueba.Controllers
 {
-    
-    
-    //[Route("[controller]/[action]")]  //de ley pasar en la url controlador y action 
+      
+    //[Route("[controller]/[action]")]  //obligatorio pasar en la url controlador y action 
     //[Route("/Nombre")]  //cambiar nombre de controlador
     public class UsuariosController : Controller
     {
@@ -60,9 +59,14 @@ namespace Prueba.Controllers
 
 
         [HttpGet("/[controller]/[action]/{data=double}", Name = "nombre")] //asignar nombre a las rutas
-        public IActionResult Metodo(int age, string nombre)
+        //public IActionResult Metodo(int age, string nombre)
+        //{
+        //    var x = $"nombre {nombre} edad {age}";
+        //    return View("Index", x);
+        //}
+        public IActionResult Metodo(int code)
         {
-            var x = $"nombre {nombre} edad {age}";
+            var x = $"Código de estado {code}";
             return View("Index", x);
         }
     }

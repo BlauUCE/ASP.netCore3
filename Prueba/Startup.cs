@@ -12,6 +12,10 @@ using Prueba.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System.Text;
+using Microsoft.AspNetCore.Http;
+using System.Net;
+using Microsoft.AspNetCore.Diagnostics;
 
 namespace Prueba
 {
@@ -23,6 +27,7 @@ namespace Prueba
         }
 
         public IConfiguration Configuration { get; }
+        
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -43,6 +48,25 @@ namespace Prueba
             {
                 app.UseDeveloperExceptionPage();
                 app.UseDatabaseErrorPage();
+
+                //mesaje excepcion personalizado
+                //app.UseExceptionHandler(options =>
+                //{
+                //    options.Run(async context =>
+                //    {
+                //        context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                //        context.Response.ContentType = "text/html";
+                //        var ex = context.Features.Get<IExceptionHandlerFeature>();
+                //        if (ex != null)
+                //        {
+                //            var error = $"<h1>Error {ex.Error.Message}</h1>{ex.Error.StackTrace}";
+                //            await context.Response.WriteAsync(error).ConfigureAwait(false);
+                //        }
+                //    });
+                //});
+
+                //app.UseExceptionHandler("/Home/Error");
+
             }
             else
             {
@@ -50,6 +74,40 @@ namespace Prueba
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+            //obtener codigos de errores de la aplicacion
+            //muestra una vista con Status Code: 404; Not Found  
+            //app.UseStatusCodePages();
+
+            //personalizar mensajes
+            //no funciona tildes
+            //String str = "Página de código de estado, código {0}";
+            //byte[] bytes = Encoding.Default.GetBytes(str);
+            //str = Encoding.UTF8.GetString(bytes);
+            //str = System.Web.HttpUtility.HtmlDecode("Página de código de estado, código {0}");
+            //app.UseStatusCodePages("text/plain", str);
+
+            //app.UseStatusCodePages("text/plain", "Pagina de codigo de estado, codigo {0}");
+
+            //personalizar el mensaje
+            //app.UseStatusCodePages( async context =>
+            //{
+            //    await context.HttpContext.Response.WriteAsync(
+            //        "Pagina de codigo de estado, codigo " +
+            //        context.HttpContext.Response.StatusCode
+            //        );
+            //});
+
+            //otra forma con tildes
+            //app.UseStatusCodePagesWithRedirects("/Usuarios/Metodo?code={0}");
+
+            //otra forma con tildes
+            //app.UseStatusCodePagesWithReExecute("/Usuarios/Metodo", "?code={0}");
+
+            //con la vista error
+            app.UseStatusCodePagesWithReExecute("/Home/Error", "?statusCode={0}");
+
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
