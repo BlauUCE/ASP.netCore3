@@ -121,6 +121,10 @@ namespace Prueba
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                //agregar ruta
+                endpoints.MapAreaControllerRoute("Usuarios", "Usuario", "{controller=Usuario}/{action=Usuario}/{id?}");
+
                 endpoints.MapRazorPages();
             });
         }

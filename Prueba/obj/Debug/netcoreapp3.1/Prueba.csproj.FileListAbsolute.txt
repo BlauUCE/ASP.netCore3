@@ -156,3 +156,13 @@ C:\Users\desarrollo\Documents\Prueba\Prueba\obj\Debug\netcoreapp3.1\Prueba.MvcAp
 C:\Users\desarrollo\Documents\Prueba\Prueba\obj\Debug\netcoreapp3.1\Prueba.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\desarrollo\Documents\Prueba\Prueba\obj\Debug\netcoreapp3.1\Razor\Views\Usuarios\Index.cshtml.g.cs
 C:\Users\desarrollo\Documents\Prueba\Prueba\obj\Debug\netcoreapp3.1\Razor\Views\Usuarios\Metodo.cshtml.g.cs
+C:\Users\desarrollo\Documents\Prueba\Prueba\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Users\desarrollo\Documents\Prueba\Prueba\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Users\desarrollo\Documents\Prueba\Prueba\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\desarrollo\Documents\Prueba\Prueba\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\desarrollo\Documents\Prueba\Prueba\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\desarrollo\Documents\Prueba\Prueba\obj\Debug\netcoreapp3.1\Razor\Areas\Usuario\Views\Usuario\Usuario.cshtml.g.cs
+C:\Users\desarrollo\Documents\Prueba\Prueba\obj\Debug\netcoreapp3.1\Razor\Areas\Usuario\Views\_ViewStart.cshtml.g.cs
+C:\Users\desarrollo\Documents\Prueba\Prueba\obj\Debug\netcoreapp3.1\Razor\Areas\Usuario\Pages\Account\Register.cshtml.g.cs
+C:\Users\desarrollo\Documents\Prueba\Prueba\obj\Debug\netcoreapp3.1\Razor\Areas\Usuario\Pages\_ViewImports.cshtml.g.cs
+C:\Users\desarrollo\Documents\Prueba\Prueba\obj\Debug\netcoreapp3.1\Razor\Areas\Usuario\Pages\_ViewStart.cshtml.g.cs
